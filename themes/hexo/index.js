@@ -152,6 +152,9 @@ const LayoutBase = props => {
         <div className='block lg:hidden'>
           <TocDrawer post={post} cRef={drawerRight} targetRef={tocRef} />
         </div>
+        
+        {/* 使用音乐播放器 */}
+        <SimplePlayer /> 
 
         {/* 悬浮菜单 */}
         <RightFloatArea floatSlot={floatSlot} />
@@ -161,8 +164,6 @@ const LayoutBase = props => {
 
         {/* 页脚 */}
         <Footer title={siteConfig('TITLE')} />
-
-        <SimplePlayer /> {/* 使用音乐播放器 */}
 
       </div>
     </ThemeGlobalHexo.Provider>
