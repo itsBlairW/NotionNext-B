@@ -1,0 +1,12 @@
+
+    # *
+    User-agent: *
+    Allow: /
+  
+    # Host
+    Host: https://itsblair.vercel.app/en
+  
+    # Sitemaps
+    Sitemap: https://itsblair.vercel.app/en/sitemap.xml
+  
+    
