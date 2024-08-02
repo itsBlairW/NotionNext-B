@@ -4,9 +4,9 @@
     Allow: /
   
     # Host
-    Host: https://itsblair.vercel.app/en
+    Host: /
   
     # Sitemaps
-    Sitemap: https://itsblair.vercel.app/en/sitemap.xml
+    Sitemap: //sitemap.xml
   
     
