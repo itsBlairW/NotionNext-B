@@ -7,32 +7,32 @@ const ImageSlider = () => {
         src: '/images/image1.jpg',
         alt: 'Image 1',
         placeholderSrc: '/images/placeholder.JPG' // 这里可以放占位图的路径
-      },
-      {
-        src: '/images/image2.jpg',
-        alt: 'Image 2',
-        placeholderSrc: '/images/placeholder.JPG'
-      },
-      {
-        src: '/images/image3.jpg',
-        alt: 'Image 3',
-        placeholderSrc: '/images/placeholder.JPG'
-      },
-      {
-        src: '/images/image4.jpg',
-        alt: 'Image 4',
-        placeholderSrc: '/images/placeholder.JPG'
-      },
-      {
-        src: '/images/image5.jpg',
-        alt: 'Image 5',
-        placeholderSrc: '/images/placeholder.JPG'
-      },
-      {
-        src: '/images/image6.jpg',
-        alt: 'Image 6',
-        placeholderSrc: '/images/placeholder.JPG'
       }
+      // {
+      //   src: '/images/image2.jpg',
+      //   alt: 'Image 2',
+      //   placeholderSrc: '/images/placeholder.JPG'
+      // },
+      // {
+      //   src: '/images/image3.jpg',
+      //   alt: 'Image 3',
+      //   placeholderSrc: '/images/placeholder.JPG'
+      // },
+      // {
+      //   src: '/images/image4.jpg',
+      //   alt: 'Image 4',
+      //   placeholderSrc: '/images/placeholder.JPG'
+      // },
+      // {
+      //   src: '/images/image5.jpg',
+      //   alt: 'Image 5',
+      //   placeholderSrc: '/images/placeholder.JPG'
+      // },
+      // {
+      //   src: '/images/image6.jpg',
+      //   alt: 'Image 6',
+      //   placeholderSrc: '/images/placeholder.JPG'
+      // }
       // 添加更多图片对象
     ];
 
