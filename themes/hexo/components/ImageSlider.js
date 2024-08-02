@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import LazyImage from '@/components/LazyImage';
+
 
 const ImageSlider = () => {
     const images = [
@@ -72,7 +72,7 @@ const ImageSlider = () => {
         <button onClick={prevSlide}>❮</button>
         <div className='slider'>
           <div className='slider-image-container relative overflow-hidden w-80 h-60'> {/* 设置固定大小 */}
-          <LazyImage
+          <img
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
               placeholderSrc={images[currentIndex].placeholderSrc}

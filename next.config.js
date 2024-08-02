@@ -212,6 +212,18 @@ const nextConfig = {
       },
     });
 
+    // 处理PDF文件
+    config.module.rules.push({
+      test: /\.pdf$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+          outputPath: 'pdfs/', // 设置输出路径
+        },
+      },
+    });
+
     return config
   },
   experimental: {
