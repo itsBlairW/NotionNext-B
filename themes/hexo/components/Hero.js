@@ -21,6 +21,7 @@ const Hero = props => {
     window.scrollTo({ top: wrapperTop, behavior: 'smooth' })
   }
 
+  {/* 实现动态打字问候语 */}
   const GREETING_WORDS = siteConfig('GREETING_WORDS').split(',')
   useEffect(() => {
     updateHeaderHeight()

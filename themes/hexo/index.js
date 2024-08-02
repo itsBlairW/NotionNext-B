@@ -9,7 +9,7 @@ import { Transition } from '@headlessui/react'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { createContext, useContext, useEffect, useRef } from 'react'
+import { createContext, useContext, useEffect, useRef, useState} from 'react'
 import ArticleAdjacent from './components/ArticleAdjacent'
 import ArticleCopyright from './components/ArticleCopyright'
 import { ArticleLock } from './components/ArticleLock'
@@ -34,6 +34,7 @@ import TocDrawerButton from './components/TocDrawerButton'
 import CONFIG from './config'
 import { Style } from './style'
 import SimplePlayer from './components/PlayerMusic'
+import ImageSlider from './components/ImageSlider'
 
 const AlgoliaSearchModal = dynamic(
   () => import('@/components/AlgoliaSearchModal'),
@@ -176,8 +177,39 @@ const LayoutBase = props => {
  * @param {*} props
  * @returns
  */
-const LayoutIndex = props => {
-  return <LayoutPostList {...props} className='pt-8' />
+
+  const LayoutIndex = props => {
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      // 根据滚动位置设置可见性
+      if (scrollY > 100) {
+        setIsVisible(true); // 滚动超过100px时可见
+      } else {
+        setIsVisible(false); // 否则不可见
+      }
+    };
+
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
+  return (
+    <div className="container mx-auto px-4 md:px-8">
+      <div className={`fixed-section transition-opacity duration-700 ${isVisible ? 'animate-fadeIn' : 'opacity-0'}`}>
+        {/* 照片滚动组件 */}
+        <ImageSlider />
+      </div>
+      <div className="pt-8">
+          <LayoutPostList {...props} className='pt-8' />
+      </div>
+    </div>
+  )
 }
 
 /**
@@ -280,7 +312,7 @@ const LayoutSlug = props => {
             const article = document.getElementById('notion-article')
             if (!article) {
               router.push('/404').then(() => {
-                console.warn('找不到页面', router.asPath)
+                console.warn("Can't Find Page", router.asPath)
               })
             }
           }
@@ -359,7 +391,7 @@ const Layout404 = props => {
             404
           </h2>
           <div className='inline-block text-left h-32 leading-10 items-center'>
-            <h2 className='m-0 p-0'>页面未找到</h2>
+            <h2 className='m-0 p-0'>Page Not Found</h2>
           </div>
         </div>
       </div>
