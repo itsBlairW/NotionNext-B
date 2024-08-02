@@ -53,9 +53,9 @@ const ImageSlider = () => {
           <button onClick={nextSlide} className="bg-transparent border-none text-lg cursor-pointer p-0 hover:opacity-70">❯</button>
           {/* 文字框 */}
           <div className="text-box p-4 w-full bg-white dark:bg-hexo-black-gray rounded-lg">
-            <h2 className="text-lg font-bold text-gray-600 dark:text-gray-300 ">Profile🥳</h2>
-            <p className="text-gray-600 dark:text-gray-300">Web Developer | Dancer</p>
-            <p className="text-gray-600 dark:text-gray-300">Open to Connect</p>
+            <h2 className="text-lg font-bold text-gray-600 dark:text-gray-300 ">Bio🥳</h2>
+            <p className="text-gray-600 dark:text-gray-300">This guy is Lazy, she didn't leave anying...</p>
+            <p className="text-gray-600 dark:text-gray-300">HAHA...Its a lie</p>
             <p className="text-gray-600 dark:text-gray-300">🫥If you dont like Friday, You are Subjective</p>
           </div>
         </div>
