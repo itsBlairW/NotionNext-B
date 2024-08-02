@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 
 const ImageSlider = () => {
     const images = [
-      {
-        src: '/images/image1.jpg',
-        alt: 'Image 1',
-        placeholderSrc: '/images/placeholder.JPG' // 这里可以放占位图的路径
-      }
+      // {
+      //   src: '/images/image1.jpg',
+      //   alt: 'Image 1',
+      //   placeholderSrc: '/images/placeholder.JPG' // 这里可以放占位图的路径
+      // },
       // {
       //   src: '/images/image2.jpg',
       //   alt: 'Image 2',
@@ -28,12 +28,12 @@ const ImageSlider = () => {
       //   alt: 'Image 5',
       //   placeholderSrc: '/images/placeholder.JPG'
       // },
-      // {
-      //   src: '/images/image6.jpg',
-      //   alt: 'Image 6',
-      //   placeholderSrc: '/images/placeholder.JPG'
-      // }
-      // 添加更多图片对象
+      {
+        src: '/images/image6.jpg',
+        alt: 'Image 6',
+        placeholderSrc: '/images/placeholder.JPG'
+      }
+      //添加更多图片对象
     ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
