@@ -28,11 +28,11 @@ const ImageSlider = () => {
       //   alt: 'Image 5',
       //   placeholderSrc: '/images/placeholder.JPG'
       // },
-      {
-        src: '/images/image6.jpg',
-        alt: 'Image 6',
-        placeholderSrc: '/images/placeholder.JPG'
-      }
+      // {
+      //   src: '/images/image6.jpg',
+      //   alt: 'Image 6',
+      //   placeholderSrc: '/images/placeholder.JPG'
+      // }
       //添加更多图片对象
     ];
 
