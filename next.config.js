@@ -200,6 +200,18 @@ const nextConfig = {
       },
     });
 
+    // 处理图片文件
+    config.module.rules.push({
+      test: /\.(png|jpg|jpeg|gif|svg)$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+          outputPath: 'images/',
+        },
+      },
+    });
+
     return config
   },
   experimental: {

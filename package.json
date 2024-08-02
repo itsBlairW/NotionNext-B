@@ -9,8 +9,8 @@
   },
   "author": {
     "name": "tangly",
-    "email": "mail@tangly1024.com",
-    "url": "http://tangly1024.com"
+    "email": "18jw111@gmail.com",
+    "url": "http://blairwang.com"
   },
   "scripts": {
     "dev": "next dev",
@@ -66,6 +66,6 @@
   },
   "bugs": {
     "url": "https://github.com/tangly/NotionNext/issues",
-    "email": "tlyong1992@hotmail.com"
+    "email": "18jw111@gmail.com"
   }
 }
