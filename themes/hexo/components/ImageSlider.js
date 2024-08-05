@@ -33,7 +33,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 md:px-8 max-w-screen-2xl">
+    <div className="container rounded-lg bg-white border dark:bg-hexo-black-gray dark:border-black mx-auto px-4 md:px-8 w-full">
       <div className="fixed-section transition-opacity duration-700">
         <div className="slider-container w-2xl flex flex-col items-center justify-between relative my-5 mx-auto w-full rounded-lg p-4 bg-white dark:bg-hexo-black-gray">
         <div className="slider-text text-center mb-4 text-gray-900 dark:text-dark-7">
@@ -54,8 +54,6 @@ const ImageSlider = () => {
           {/* 文字框 */}
           <div className="text-box p-4 w-full bg-white dark:bg-hexo-black-gray rounded-lg">
             <h2 className="text-lg font-bold text-gray-600 dark:text-gray-300 ">Bio🥳</h2>
-            <p className="text-gray-600 dark:text-gray-300">This guy is Lazy, she didn't leave anying...</p>
-            <p className="text-gray-600 dark:text-gray-300">HAHA...Its a lie</p>
             <p className="text-gray-600 dark:text-gray-300">🫥If you dont like Friday, You are Subjective</p>
           </div>
         </div>
