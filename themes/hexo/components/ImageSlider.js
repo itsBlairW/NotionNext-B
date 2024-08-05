@@ -39,7 +39,7 @@ const ImageSlider = () => {
         <div className="slider-text text-center mb-4 text-gray-900 dark:text-dark-7">
             <span className="menu-link cursor-pointer font-bold" onClick={handleTextClick}>MOMENTS...</span>
         </div>
-          <button onClick={prevSlide} className="bg-transparent border-none text-lg cursor-pointer p-0 hover:opacity-70">❮</button>
+          {/* <button onClick={prevSlide} className="bg-transparent border-none text-lg cursor-pointer p-0 hover:opacity-70">❮</button>
           <div className="slider flex items-center justify-center">
             <div className="slider-image-container relative overflow-hidden w-80 h-60">
               <img
@@ -50,7 +50,7 @@ const ImageSlider = () => {
               />
             </div>
           </div>
-          <button onClick={nextSlide} className="bg-transparent border-none text-lg cursor-pointer p-0 hover:opacity-70">❯</button>
+          <button onClick={nextSlide} className="bg-transparent border-none text-lg cursor-pointer p-0 hover:opacity-70">❯</button> */}
           {/* 文字框 */}
           <div className="text-box p-4 w-full bg-white dark:bg-hexo-black-gray rounded-lg">
             <h2 className="text-lg font-bold text-gray-600 dark:text-gray-300 ">Bio🥳</h2>
