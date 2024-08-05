@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 const ImageSlider = () => {
   const images = [
-    { src: '/images/image1.jpg', alt: 'Image 1', placeholderSrc: '/images/placeholder.JPG' },
-    { src: '/images/image2.jpg', alt: 'Image 2', placeholderSrc: '/images/placeholder.JPG' },
-    { src: '/images/image3.jpg', alt: 'Image 3', placeholderSrc: '/images/placeholder.JPG' },
-    { src: '/images/image4.jpg', alt: 'Image 4', placeholderSrc: '/images/placeholder.JPG' },
-    { src: '/images/image5.jpg', alt: 'Image 5', placeholderSrc: '/images/placeholder.JPG' },
-    { src: '/images/image6.jpg', alt: 'Image 6', placeholderSrc: '/images/placeholder.JPG' }
+    { src: '/images/image1.JPG', alt: 'Image 1', placeholderSrc: '/images/placeholder.JPG' },
+    { src: '/images/image2.JPG', alt: 'Image 2', placeholderSrc: '/images/placeholder.JPG' },
+    { src: '/images/image3.JPG', alt: 'Image 3', placeholderSrc: '/images/placeholder.JPG' },
+    { src: '/images/image4.JPG', alt: 'Image 4', placeholderSrc: '/images/placeholder.JPG' },
+    { src: '/images/image5.JPG', alt: 'Image 5', placeholderSrc: '/images/placeholder.JPG' },
+    { src: '/images/image6.JPG', alt: 'Image 6', placeholderSrc: '/images/placeholder.JPG' }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,8 +39,7 @@ const ImageSlider = () => {
         <div className="slider-text text-center mb-4 text-gray-900 dark:text-dark-7">
             <span className="menu-link cursor-pointer font-bold" onClick={handleTextClick}>MOMENTS...</span>
         </div>
-        <img src='/images/image6.jpg' />
-          {/* <button onClick={prevSlide} className="bg-transparent border-none text-lg cursor-pointer p-0 hover:opacity-70">❮</button>
+          <button onClick={prevSlide} className="bg-transparent border-none text-lg cursor-pointer p-0 hover:opacity-70">❮</button>
           <div className="slider flex items-center justify-center">
             <div className="slider-image-container relative overflow-hidden w-80 h-60">
               <img
@@ -51,7 +50,7 @@ const ImageSlider = () => {
               />
             </div>
           </div>
-          <button onClick={nextSlide} className="bg-transparent border-none text-lg cursor-pointer p-0 hover:opacity-70">❯</button> */}
+          <button onClick={nextSlide} className="bg-transparent border-none text-lg cursor-pointer p-0 hover:opacity-70">❯</button>
           {/* 文字框 */}
           <div className="text-box p-4 w-full bg-white dark:bg-hexo-black-gray rounded-lg">
             <h2 className="text-lg font-bold text-gray-600 dark:text-gray-300 ">Bio🥳</h2>
