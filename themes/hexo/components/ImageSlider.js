@@ -39,6 +39,7 @@ const ImageSlider = () => {
         <div className="slider-text text-center mb-4 text-gray-900 dark:text-dark-7">
             <span className="menu-link cursor-pointer font-bold" onClick={handleTextClick}>MOMENTS...</span>
         </div>
+        <img src='/images/image6.jpg' />
           {/* <button onClick={prevSlide} className="bg-transparent border-none text-lg cursor-pointer p-0 hover:opacity-70">❮</button>
           <div className="slider flex items-center justify-center">
             <div className="slider-image-container relative overflow-hidden w-80 h-60">
